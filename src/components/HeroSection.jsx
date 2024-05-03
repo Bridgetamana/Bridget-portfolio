@@ -8,8 +8,8 @@ const HeroSection = () => {
       <motion.div className="gap-12 items-center flex flex-col-reverse lg:flex-row flex-wrap">
         <motion.div
           className="max-w-md"
-          initial={{ y: "9rem", opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          initial={{ x: "-9rem", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{
             duration: 2,
             type: "fade-in",
@@ -38,7 +38,8 @@ const HeroSection = () => {
           </p>
           <button className="uppercase mt-8">
             <a
-              href="#"
+              href="https://docs.google.com/document/d/147_EDeqMJ05WygU8LzrfLCc76hGqWBV-P4CfhvOndEo/edit?usp=sharing"
+              target="_blank"
               className="md:text-lg border-2 border-[#BBBCC5] rounded-full py-3 px-5 hover:bg-[#570071] hover:text-[#EFEFF0] hover:border-0 transition-all "
             >
               Download my Resume

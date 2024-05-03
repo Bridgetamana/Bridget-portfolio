@@ -1,9 +1,21 @@
 import React from 'react'
-import Project from "../assets/img/thumbnail-project.webp"
+import Project from "../assets/img/thumbnail-project.webp";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const Projects = () => {
+
   return (
-    <div className="w-full mx-auto max-w-5xl p-6 lg:px-8 mt-16" id="project">
+    <motion.div
+      className="w-full mx-auto max-w-5xl p-6 lg:px-8 mt-16"
+      id="project"
+      initial={{ y: "100%", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 2,
+        type: "ease-in",
+      }}
+    >
       <div>
         <span>
           <h1 className="text-4xl font-Worksans font-semibold mb-4 text-[#570071]">
@@ -156,7 +168,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
