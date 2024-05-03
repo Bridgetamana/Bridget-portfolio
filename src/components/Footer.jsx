@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className=" border-t-2 border-[#570071] border-dashed mt-16 text-[#5C4F62]">
+    <div className=" border-t-2 bg-[#570071] mt-16 text-[#EDEAEF] ">
       <div
-        className="w-full mx-auto max-w-5xl p-6 lg:px-8 lg
-      py-24 flex justify-between"
+        className="w-full mx-auto max-w-7xl p-6 lg
+      pt-24 pb-10 flex justify-between items-center"
       >
         <h1 className="font-Worksans font-semibold mb-4">
           © 2023, Built by Bridget Amana.
@@ -31,6 +31,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
