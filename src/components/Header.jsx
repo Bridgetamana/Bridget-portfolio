@@ -20,7 +20,7 @@ const Header = () => {
         <span className="hidden">X</span>
       </span>
       <div className="p-3 border border-black mt-4 lg:border-0 lg:mt-0">
-        <ul className="text-[#1E1F24]  lg:flex lg:gap-8">
+        <ul className="lg:flex lg:gap-8">
           <li className="lg:border-r lg:border-[#1E1F24] pr-4">
             <a href="#">About</a>
           </li>
