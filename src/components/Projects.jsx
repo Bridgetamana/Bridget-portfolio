@@ -3,7 +3,7 @@ import Project from "../assets/img/thumbnail-project.webp"
 
 const Projects = () => {
   return (
-    <div className="w-full mx-auto max-w-5xl p-6 lg:px-8 mt-16">
+    <div className="w-full mx-auto max-w-5xl p-6 lg:px-8 mt-16" id='project'>
       <div>
         <span>
           <h1 className="text-4xl font-Worksans font-semibold mb-4">

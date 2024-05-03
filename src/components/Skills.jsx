@@ -7,7 +7,7 @@ import { IoLogoJavascript } from "react-icons/io";
 
 const Skills = () => {
   return (
-    <div className="w-full mx-auto max-w-5xl p-6 lg:px-8 mt-16">
+    <div className="w-full mx-auto max-w-5xl p-6 lg:px-8 mt-16" id="skills">
       <div>
         <span>
           <h1 className="text-4xl font-Worksans font-semibold mb-4">

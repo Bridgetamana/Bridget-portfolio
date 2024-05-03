@@ -13,17 +13,17 @@ const Footer = () => {
         </h1>
         <ul className="flex gap-4 items-center pointer-events-auto">
           <li>
-            <a href="#">
+            <a href="https://github.com/Bridgetamana">
               <FaGithub />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://twitter.com/amana_bridget">
               <FaTwitter />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/bridget-amana/">
               <FaLinkedin />
             </a>
           </li>
