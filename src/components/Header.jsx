@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { BsFillSunFill, BsMoonStars } from "react-icons/bs";
-import { BsSun } from "react-icons/bs";
 import { CgMenuRight } from "react-icons/cg";
 import { FaHeart } from "react-icons/fa";
 import { LiaTimesSolid } from "react-icons/lia";
@@ -55,13 +54,13 @@ const Header = () => {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-    document.body.classList.toggle("dark",darkMode);
+    document.body.classList.toggle("dark", darkMode);
   };
 
   return (
-    <div className=" sticky top-0 right-0 bg-[#F3F3F3] dark:bg-[#341A3E] z-50">
-      <div className="w-full mx-auto max-w-7xl justify-between p-6 lg:px-8 lg:flex">
-        <span className="flex items-center justify-between">
+    <nav className="sticky top-0 right-0 bg-[#F3F3F3] dark:bg-[#341A3E] z-50">
+      <div className="w-full mx-auto max-w-7xl p-6 lg:px-8 lg:flex justify-between items-center">
+        <div className="flex items-center justify-between">
           <motion.span
             className="flex gap-2 items-center"
             initial={{ x: "-9rem", opacity: 0 }}
@@ -89,7 +88,7 @@ const Header = () => {
           >
             {menuOpen ? <LiaTimesSolid /> : <CgMenuRight />}
           </motion.span>
-        </span>
+        </div>
 
         {/* Mobile Navigation */}
         {menuOpen && (
@@ -152,9 +151,7 @@ const Header = () => {
                 {!darkMode && (
                   <BsFillSunFill className="text-2xl cursor-pointer" />
                 )}
-              </li>
-              {/* <li className="p-2 cursor-pointer bg-[#E592FF] text-[#341A3E] rounded-full hover:bg-transparent hover:border-[1px] hover:border-[#F1D5FC] hover:text-[#E592FF]">
-              </li> */}
+              </li>{" "}
             </ul>
           </motion.div>
         )}
@@ -184,7 +181,7 @@ const Header = () => {
               </Link>
             </motion.li>
             <motion.li
-              className=" pr-4 cursor-pointer"
+              className="pr-4 cursor-pointer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -210,18 +207,23 @@ const Header = () => {
               </Link>
             </motion.li>
             <li
-              className="p-2 cursor-pointer dark:bg-[#E592FF] dark:text-[rgb(52,26,62)] dark:hover:border-[#F1D5FC] bg-[#341A3E] hover:bg-transparent dark:hover:bg-transparent hover:border-[1px] hover:border-[#341A3E] text-[#E592FF] hover:text-[#341A3E] dark:hover:text-[#E592FF] rounded-full"
-              onClick={() => toggleDarkMode()}
+              className={`p-2 cursor-pointer ${
+                darkMode
+                  ? "dark:bg-[#E592FF] dark:text-[#341A3E] dark:hover:border-[#F1D5FC]"
+                  : "bg-[#341A3E] text-[#E592FF] hover:text-[#341A3E] dark:hover:text-[#E592FF]"
+              } hover:bg-transparent hover:border-[1px] hover:border-[#341A3E] rounded-full`}
+              onClick={toggleDarkMode}
             >
-              {darkMode && <BsMoonStars className="text-2xl cursor-pointer" />}
-              {!darkMode && (
+              {darkMode ? (
+                <BsMoonStars className="text-2xl cursor-pointer" />
+              ) : (
                 <BsFillSunFill className="text-2xl cursor-pointer" />
               )}
             </li>
           </ul>
         </motion.div>
       </div>
-    </div>
+    </nav>
   );
 };
 
