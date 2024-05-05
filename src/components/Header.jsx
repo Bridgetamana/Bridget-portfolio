@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+import { BsFillSunFill, BsMoonStars } from "react-icons/bs";
+import { BsSun } from "react-icons/bs";
 import { CgMenuRight } from "react-icons/cg";
 import { FaHeart } from "react-icons/fa";
 import { LiaTimesSolid } from "react-icons/lia";
@@ -48,116 +51,175 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
-  return (
-    <div className="w-full mx-auto max-w-7xl justify-between p-6 lg:px-8 lg:flex sticky top-0 right-0 bg-[#F3F3F3] z-50">
-      <span className="flex items-center justify-between">
-        <span className="flex gap-2 items-center">
-          <span className="bg-[#DF8DFF] p-2 rounded-full">
-            <FaHeart className="text-white text-sm" />
-          </span>
-          <a
-            href="#"
-            className="text-xl font-medium font-Worksans cursor-pointer"
-          >
-            Bridget Amana
-          </a>
-        </span>
-        <motion.span
-          className="text-2xl lg:hidden cursor-pointer"
-          onClick={toggleMenu}
-          variants={menuVariant}
-          animate={menuOpen ? "open" : "closed"}
-        >
-          {menuOpen ? <LiaTimesSolid /> : <CgMenuRight />}
-        </motion.span>
-      </span>
+  const [darkMode, setDarkMode] = useState(false);
 
-      {/* Mobile Navigation */}
-      {menuOpen && (
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle("dark",darkMode);
+  };
+
+  return (
+    <div className=" sticky top-0 right-0 bg-[#F3F3F3] dark:bg-[#341A3E] z-50">
+      <div className="w-full mx-auto max-w-7xl justify-between p-6 lg:px-8 lg:flex">
+        <span className="flex items-center justify-between">
+          <motion.span
+            className="flex gap-2 items-center"
+            initial={{ x: "-9rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 2,
+              type: "ease-in",
+            }}
+          >
+            <span className="bg-[#DF8DFF] p-2 rounded-full">
+              <FaHeart className="text-white text-sm" />
+            </span>
+            <a
+              href="#"
+              className="text-xl font-medium font-Worksans cursor-pointer"
+            >
+              Bridget Amana
+            </a>
+          </motion.span>
+          <motion.span
+            className="text-2xl lg:hidden cursor-pointer"
+            onClick={toggleMenu}
+            variants={menuVariant}
+            animate={menuOpen ? "open" : "closed"}
+          >
+            {menuOpen ? <LiaTimesSolid /> : <CgMenuRight />}
+          </motion.span>
+        </span>
+
+        {/* Mobile Navigation */}
+        {menuOpen && (
+          <motion.div
+            className={`lg:hidden `}
+            variants={variants}
+            initial="closed"
+            animate={menuOpen ? "open" : "closed"}
+          >
+            <ul className="p-6 mt-4 bg-[#F0EFF1] dark:bg-[#341A3E] drop-shadow-lg flex flex-col items-center text-lg">
+              <motion.li
+                className="p-2 cursor-pointer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link
+                  to="about"
+                  smooth={true}
+                  className="hover:border-b-2 pb-2 border-[#7E2D9A] dark:border-[#E592FF]"
+                  onClick={toggleMenu}
+                >
+                  About
+                </Link>
+              </motion.li>
+              <motion.li
+                className="p-2 cursor-pointer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link
+                  to="skills"
+                  smooth={true}
+                  className="hover:border-b-2 pb-2 border-[#7E2D9A] dark:border-[#E592FF]"
+                  onClick={toggleMenu}
+                >
+                  Skills
+                </Link>
+              </motion.li>
+              <motion.li
+                className="p-2 cursor-pointer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link
+                  to="project"
+                  smooth={true}
+                  className="hover:border-b-2 pb-2 border-[#7E2D9A] dark:border-[#963eb1]"
+                  onClick={toggleMenu}
+                >
+                  Project
+                </Link>
+              </motion.li>
+              <li
+                className="p-2 cursor-pointer dark:bg-[#E592FF] dark:text-[#341A3E] dark:hover:border-[#F1D5FC] bg-[#341A3E] hover:bg-transparent dark:hover:bg-transparent hover:border-[1px] hover:border-[#341A3E] text-[#E592FF] hover:text-[#341A3E] dark:hover:text-[#E592FF] rounded-full"
+                onClick={() => toggleDarkMode()}
+              >
+                {darkMode && (
+                  <BsMoonStars className="text-2xl cursor-pointer" />
+                )}
+                {!darkMode && (
+                  <BsFillSunFill className="text-2xl cursor-pointer" />
+                )}
+              </li>
+              {/* <li className="p-2 cursor-pointer bg-[#E592FF] text-[#341A3E] rounded-full hover:bg-transparent hover:border-[1px] hover:border-[#F1D5FC] hover:text-[#E592FF]">
+              </li> */}
+            </ul>
+          </motion.div>
+        )}
+
+        {/* Desktop Navigation */}
         <motion.div
-          className={`lg:hidden `}
-          variants={variants}
-          initial="closed"
-          animate={menuOpen ? "open" : "closed"}
+          className="p-3 mt-0 hidden lg:flex"
+          initial={{ x: "9rem", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{
+            duration: 2,
+            type: "ease-in",
+          }}
         >
-          <ul className="p-6 mt-4 bg-[#F0EFF1] drop-shadow-lg flex flex-col items-center text-lg">
+          <ul className="flex gap-8 text-lg items-center">
             <motion.li
-              className="p-2 "
+              className="pr-4 cursor-pointer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <a
-                href="#about"
-                className="hover:border-b-2 pb-2 border-[#7E2D9A]"
+              <Link
+                to="about"
+                smooth={true}
+                className="hover:border-b-2 pb-2 border-[#7E2D9A] dark:border-[#E592FF]"
               >
                 About
-              </a>
+              </Link>
             </motion.li>
             <motion.li
-              className="p-2"
+              className=" pr-4 cursor-pointer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <a
-                href="#skills"
-                className="hover:border-b-2 pb-2 border-[#7E2D9A]"
+              <Link
+                to="skills"
+                smooth={true}
+                className="hover:border-b-2 pb-2 border-[#7E2D9A] dark:border-[#E592FF]"
               >
                 Skills
-              </a>
+              </Link>
             </motion.li>
             <motion.li
-              className="p-2"
+              className="cursor-pointer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <a
-                href="#project"
-                className="hover:border-b-2 pb-2 border-[#7E2D9A]"
+              <Link
+                to="project"
+                smooth={true}
+                className="hover:border-b-2 pb-2 border-[#7E2D9A] dark:border-[#E592FF]"
               >
                 Project
-              </a>
+              </Link>
             </motion.li>
+            <li
+              className="p-2 cursor-pointer dark:bg-[#E592FF] dark:text-[rgb(52,26,62)] dark:hover:border-[#F1D5FC] bg-[#341A3E] hover:bg-transparent dark:hover:bg-transparent hover:border-[1px] hover:border-[#341A3E] text-[#E592FF] hover:text-[#341A3E] dark:hover:text-[#E592FF] rounded-full"
+              onClick={() => toggleDarkMode()}
+            >
+              {darkMode && <BsMoonStars className="text-2xl cursor-pointer" />}
+              {!darkMode && (
+                <BsFillSunFill className="text-2xl cursor-pointer" />
+              )}
+            </li>
           </ul>
         </motion.div>
-      )}
-
-      {/* Desktop Navigation */}
-      <div className="p-3 mt-0 hidden lg:flex">
-        <ul className="flex gap-8 text-lg">
-          <motion.li
-            className="pr-4 "
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <a href="#about" className="hover:border-b-2 pb-2 border-[#7E2D9A]">
-              About
-            </a>
-          </motion.li>
-          <motion.li
-            className=" pr-4"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <a
-              href="#skills"
-              className="hover:border-b-2 pb-2 border-[#7E2D9A]"
-            >
-              Skills
-            </a>
-          </motion.li>
-          <motion.li
-            className=""
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <a
-              href="#project"
-              className="hover:border-b-2 pb-2 border-[#7E2D9A]"
-            >
-              Project
-            </a>
-          </motion.li>
-        </ul>
       </div>
     </div>
   );

@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="w-full mx-auto max-w-5xl p-6 lg:px-8 lg:mt-16">
-      <motion.div className="gap-12 items-center flex flex-col-reverse lg:flex-row flex-wrap">
+    <div className="w-full mx-auto max-w-6xl p-6 lg:px-8 lg:mt-16" id="about">
+      <motion.div className="gap-12 items-center flex flex-col-reverse lg:flex-row flex-wrap justify-center">
         <motion.div
           className="max-w-md"
           initial={{ x: "-9rem", opacity: 0 }}
@@ -30,17 +30,19 @@ const HeroSection = () => {
             type: "ease-in",
           }}
         >
-          <h1 className="text-4xl font-Worksans font-semibold mb-4 text-[#570071]">
+          <h1 className="text-4xl font-Worksans font-semibold mb-4 text-[#570071] dark:text-[#DF8DFF] ">
             Hello, 🙃
           </h1>
           <p className="text-xl">
-            I'm Bridget Amana . Frontend developer, Lorem ipsum, and Lorem Ipsum{" "}
+            I'm Bridget Amana, a frontend developer.
+            <br /> I build websites that are not only clean, but also responsive
+            and accessible.{" "}
           </p>
           <button className="uppercase mt-8">
             <a
               href="https://docs.google.com/document/d/147_EDeqMJ05WygU8LzrfLCc76hGqWBV-P4CfhvOndEo/edit?usp=sharing"
               target="_blank"
-              className="md:text-lg border-2 border-[#BBBCC5] rounded-full py-3 px-5 hover:bg-[#570071] hover:text-[#EFEFF0] hover:border-0 transition-all "
+              className="md:text-lg border-2 border-[#BBBCC5] rounded-full py-3 px-5 hover:bg-[#DF8DFF] hover:text-[#EFEFF0] hover:border-0 dark:hover:text-[#1E1E20]"
             >
               Download my Resume
             </a>
