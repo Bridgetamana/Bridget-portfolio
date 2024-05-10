@@ -2,7 +2,7 @@ import React from "react";
 import Project1 from "../assets/img/mini-shopping-cart-screenshot.png";
 import Project2 from "../assets/img/uservalidati0n-screenshot.png";
 import Project3 from "../assets/img/moviielist-screenshot.png";
-import Project4 from "../assets/img/thumbnail-project.webp";
+import Project4 from "../assets/img/bankist-website-screenshot.png";
 import Project5 from "../assets/img/porfolio-screenshot.png";
 import Project6 from "../assets/img/uservalidati0n-screenshot.png";
 import { motion } from "framer-motion";
@@ -25,18 +25,18 @@ const Projects = () => {
           <h1 className="text-4xl font-Worksans font-semibold mb-4 text-[#570071] dark:text-[#DF8DFF]">
             Projects 🚀
           </h1>
-          <div className="grid md:grid-cols-2 p-4 mt-4 text-[#7B6B81] gap-12">
+          <div className="grid md:grid-cols-2 p-4 mt-4 gap-12">
             {/* Project 1 */}
-            <div className="rounded-md drop-shadow-md shadow-md bg-[#F0EFF1] dark:bg-[#221626] max-w-lg mx-auto dark:border-[1px] dark:border-[#5F606A]">
-              <div className=" max-w-lg border-b-2 border-[#B4A2BB]">
+            <div className="rounded-md drop-shadow-lg shadow-lg bg-[#F0EFF1] dark:bg-[#221C25] max-w-lg mx-auto dark:border dark:border-[#BCB0C1]">
+              <div className=" max-w-lg border-b-2 border-[#5F5263] dark:border-[#BCB0C1]">
                 <img
                   src={Project1}
                   alt="Mini Shopping Cart Project"
                   className="w-full h-[250px] object-cover"
                 />
               </div>
-              <div className="p-4 dark:text-[#B2B3BD]">
-                <h2 className="text-2xl font-Worksans font-medium uppercase text-[#261C29] dark:text-[#DF8DFF] mb-2">
+              <div className="p-4">
+                <h2 className="text-2xl font-Worksans font-medium uppercase dark:text-[#DF8DFF] mb-2">
                   Mini-shopping-cart
                 </h2>
                 <p>
@@ -69,16 +69,16 @@ const Projects = () => {
               </div>
             </div>
             {/* Project 2 */}
-            <div className="rounded-md drop-shadow-md shadow-md bg-[#F0EFF1] dark:bg-[#221626] max-w-lg mx-auto dark:border-[1px] dark:border-[#5F606A] ">
-              <div className=" max-w-lg border-b-2 border-[#B4A2BB]">
+            <div className="rounded-md drop-shadow-lg shadow-lg bg-[#F0EFF1] dark:bg-[#221C25] max-w-lg mx-auto dark:border dark:border-[#BCB0C1]">
+              <div className=" max-w-lg border-b-2 border-[#5F5263] dark:border-[#BCB0C1]">
                 <img
                   src={Project2}
                   alt="Form Validation Project"
                   className="w-full h-[250px] object-cover"
                 />
               </div>
-              <div className="p-4 dark:text-[#B2B3BD]">
-                <h2 className="text-2xl font-Worksans font-medium uppercase text-[#261C29] dark:text-[#DF8DFF] mb-2">
+              <div className="p-4">
+                <h2 className="text-2xl font-Worksans font-medium uppercase dark:text-[#DF8DFF] mb-2">
                   Form Validation
                 </h2>
                 <p>
@@ -111,16 +111,16 @@ const Projects = () => {
               </div>
             </div>
             {/* Project 3 */}
-            <div className="rounded-md drop-shadow-md shadow-md bg-[#F0EFF1] dark:bg-[#221626] max-w-lg mx-auto dark:border-[1px] dark:border-[#5F606A] ">
-              <div className=" max-w-lg border-b-2 border-[#B4A2BB]">
+            <div className="rounded-md drop-shadow-lg shadow-lg bg-[#F0EFF1] dark:bg-[#221C25] max-w-lg mx-auto dark:border dark:border-[#BCB0C1]">
+              <div className=" max-w-lg border-b-2 border-[#5F5263] dark:border-[#BCB0C1]">
                 <img
                   src={Project3}
                   alt="Movie List Project"
                   className="w-full h-[250px] object-cover"
                 />
               </div>
-              <div className="p-4 dark:text-[#B2B3BD]">
-                <h2 className="text-2xl font-Worksans font-medium uppercase text-[#261C29] dark:text-[#DF8DFF] mb-2">
+              <div className="p-4">
+                <h2 className="text-2xl font-Worksans font-medium uppercase dark:text-[#DF8DFF] mb-2">
                   Movie List
                 </h2>
                 <p>
@@ -154,16 +154,16 @@ const Projects = () => {
             </div>
 
             {/* Project 4 */}
-            <div className="rounded-md drop-shadow-md shadow-md bg-[#F0EFF1] dark:bg-[#221626] max-w-lg mx-auto dark:border-[1px] dark:border-[#5F606A] ">
-              <div className=" max-w-lg border-b-2 border-[#B4A2BB]">
+            <div className="rounded-md drop-shadow-lg shadow-lg bg-[#F0EFF1] dark:bg-[#221C25] max-w-lg mx-auto dark:border dark:border-[#BCB0C1]">
+              <div className=" max-w-lg border-b-2 border-[#5F5263] dark:border-[#BCB0C1]">
                 <img
                   src={Project4}
                   alt="Bankist Website Project"
                   className="w-full h-[250px] object-cover"
                 />
               </div>
-              <div className="p-4 dark:text-[#B2B3BD]">
-                <h2 className="text-2xl font-Worksans font-medium uppercase text-[#261C29] dark:text-[#DF8DFF] mb-2">
+              <div className="p-4">
+                <h2 className="text-2xl font-Worksans font-medium uppercase dark:text-[#DF8DFF] mb-2">
                   Bankist Website
                 </h2>
                 <p>
@@ -196,16 +196,16 @@ const Projects = () => {
             </div>
 
             {/* Project 5 */}
-            <div className="rounded-md drop-shadow-md shadow-md bg-[#F0EFF1] dark:bg-[#221626] max-w-lg mx-auto dark:border-[1px] dark:border-[#5F606A]">
-              <div className=" max-w-lg border-b-2 border-[#B4A2BB]">
+            <div className="rounded-md drop-shadow-lg shadow-lg bg-[#F0EFF1] dark:bg-[#221C25] max-w-lg mx-auto dark:border dark:border-[#BCB0C1]">
+              <div className=" max-w-lg border-b-2 border-[#5F5263] dark:border-[#BCB0C1]">
                 <img
                   src={Project5}
                   alt="Bridget's Portfolio Project"
                   className="w-full h-[250px] object-cover"
                 />
               </div>
-              <div className="p-4 dark:text-[#B2B3BD]">
-                <h2 className="text-2xl font-Worksans font-medium uppercase text-[#261C29] dark:text-[#DF8DFF]">
+              <div className="p-4">
+                <h2 className="text-2xl font-Worksans font-medium uppercase dark:text-[#DF8DFF]">
                   Bridget's portfolio
                 </h2>
                 <p>A single page portfolio</p>
@@ -235,16 +235,16 @@ const Projects = () => {
             </div>
 
             {/* Project 6 */}
-            <div className="rounded-md drop-shadow-md shadow-md bg-[#F0EFF1] dark:bg-[#221626] max-w-lg mx-auto dark:border-[1px] dark:border-[#5F606A]">
-              <div className=" max-w-lg border-b-2 border-[#B4A2BB]">
+            <div className="rounded-md drop-shadow-lg shadow-lg bg-[#F0EFF1] dark:bg-[#221C25] max-w-lg mx-auto dark:border dark:border-[#BCB0C1]">
+              <div className=" max-w-lg border-b-2 border-[#5F5263] dark:border-[#BCB0C1]">
                 <img
                   src={Project6}
                   alt="Project 6"
                   className="w-full h-[250px] object-cover"
                 />
               </div>
-              <div className="p-4 dark:text-[#B2B3BD]">
-                <h2 className="text-2xl font-Worksans font-medium uppercase text-[#261C29] dark:text-[#DF8DFF]">
+              <div className="p-4">
+                <h2 className="text-2xl font-Worksans font-medium uppercase dark:text-[#DF8DFF]">
                   Title
                 </h2>
                 <p>Description</p>

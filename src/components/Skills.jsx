@@ -16,52 +16,58 @@ const Skills = () => {
         }}
       >
         <div>
-          <h1 className="text-4xl font-Worksans font-semibold mb-4 text-[#570071] dark:text-[#DF8DFF]">
+          <h1 className="text-4xl font-Worksans font-semibold mb-4 text-[#570071] dark:text-[rgb(223,141,255)]">
             Skills 🛠️
           </h1>
-          <div className="text-[#7B6B81] dark:text-[#B2B3BD]">
+          <div className="text-[#302D32] dark:text-[#BCB0C1]">
             <div className="py-6">
-              <h2 className="text-xl font-semibold">Languages</h2>
-              <ul className="border-b-2 border-[#570071] dark:border-[#E592FF] border-dashed mt-4 pb-4 uppercase font-semibold flex flex-wrap">
+              <h2 className="text-xl font-medium text-[#251C29] dark:text-[#F0EDF0]">
+                Languages
+              </h2>
+              <ul className="border-b-2 border-[#570071] dark:border-[#E592FF] border-dashed mt-4 pb-4 uppercase flex flex-wrap">
                 <li className="flex items-center gap-2 mr-8">
-                  <span className="w-2 h-2 bg-[#7A7B86] rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-[#302D32]/50 dark:bg-[#BCB0C1] rounded-full mr-3"></span>
                   <p>HTML</p>
-                  <FaHtml5 className="text-xl" />
+                  <FaHtml5 className="text-xl text-[#302D32]/50 dark:text-[#BCB0C1]" />
                 </li>
                 <li className="flex items-center gap-2 mr-8">
-                  <span className="w-2 h-2 bg-[#7A7B86] rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-[#302D32]/50 dark:bg-[#BCB0C1] rounded-full mr-3"></span>
                   <p>CSS</p>
-                  <FaCss3 className="text-xl" />
+                  <FaCss3 className="text-xl text-[#302D32]/50 dark:text-[#BCB0C1]" />
                 </li>
                 <li className="flex items-center gap-2 mr-8">
-                  <span className="w-2 h-2 bg-[#7A7B86] rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-[#302D32]/50 dark:bg-[#BCB0C1] rounded-full mr-3"></span>
                   <p>Javascript</p>
-                  <IoLogoJavascript className="text-xl" />
+                  <IoLogoJavascript className="text-xl text-[#302D32]/50 dark:text-[#BCB0C1]" />
                 </li>
               </ul>
             </div>
             <div className="py-6">
-              <h2 className="text-xl font-semibold">Libraries/Frameworks</h2>
-              <ul className="border-b-2 border-[#570071] dark:border-[#E592FF] border-dashed mt-4 pb-4 uppercase font-semibold flex flex-wrap">
+              <h2 className="text-xl font-medium text-[#251C29] dark:text-[#F0EDF0]">
+                Libraries/Frameworks
+              </h2>
+              <ul className="border-b-2 border-[#570071] dark:border-[#E592FF] border-dashed mt-4 pb-4 uppercase flex flex-wrap">
                 <li className="flex items-center gap-2 mr-8">
-                  <span className="w-2 h-2 bg-[#7A7B86] rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-[#302D32]/50 dark:bg-[#BCB0C1] rounded-full mr-3"></span>
                   <p>Tailwind CSS</p>
-                  <BiLogoTailwindCss className="text-xl" />
+                  <BiLogoTailwindCss className="text-xl text-[#302D32]/50 dark:text-[#BCB0C1]" />
                 </li>
                 <li className="flex items-center gap-2 mr-8">
-                  <span className="w-2 h-2 bg-[#7A7B86] rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-[#302D32]/50 dark:bg-[#BCB0C1] rounded-full mr-3"></span>
                   <p>React</p>
-                  <FaReact className="text-xl" />
+                  <FaReact className="text-xl text-[#302D32]/50 dark:text-[#BCB0C1]" />
                 </li>
               </ul>
             </div>
             <div className="py-6">
-              <h2 className="text-xl font-semibold">Version control</h2>
-              <ul className="border-b-2 border-[#570071] dark:border-[#E592FF] border-dashed mt-4 pb-4 uppercase font-semibold mb-8 flex flex-wrap">
+              <h2 className="text-xl font-medium text-[#251C29] dark:text-[#F0EDF0]">
+                Version control
+              </h2>
+              <ul className="border-b-2 border-[#570071] dark:border-[#E592FF] border-dashed mt-4 pb-4 uppercase mb-8 flex flex-wrap">
                 <li className="flex items-center gap-2 mr-8">
-                  <span className="w-2 h-2 bg-[#7A7B86] rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-[#302D32]/50 dark:bg-[#BCB0C1] rounded-full mr-3"></span>
                   <p>Github</p>
-                  <FaGithub className="text-xl" />
+                  <FaGithub className="text-xl text-[#302D32]/50 dark:text-[#BCB0C1]" />
                 </li>
               </ul>
             </div>

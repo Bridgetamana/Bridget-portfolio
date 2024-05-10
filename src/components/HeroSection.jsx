@@ -33,7 +33,7 @@ const HeroSection = () => {
             type: "ease-in",
           }}
         >
-          <h1 className="text-4xl font-Worksans font-semibold mb-4 text-[#570071] dark:text-[#DF8DFF] ">
+          <h1 className="text-3xl font-Worksans font-medium mb-4 text-[#570071] dark:text-[#df8dff] ">
             Hello, 🙃
           </h1>
           <p className="text-xl">
@@ -43,10 +43,10 @@ const HeroSection = () => {
           </p>
           <button className="uppercase mt-8">
             <a
-              href="https://docs.google.com/document/d/147_EDeqMJ05WygU8LzrfLCc76hGqWBV-P4CfhvOndEo/edit?usp=sharing"
+              href="https://drive.google.com/file/d/11dW1pFy4CLRgaJ4ALH-LUd_OirZp2ghS/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="md:text-lg border-2 border-[#BBBCC5] rounded-full py-3 px-5 hover:bg-[#570471] dark:hover:bg-[#DF8DFF] hover:text-[#EFEFF0] hover:border-0 dark:hover:text-[#1E1E20]"
+              className="rounded-full border border-[#5F5263] py-3 px-5 hover:bg-[#570471] text-[#570471] hover:text-[#F0EDF0] hover:border-0 dark:text-[#DF8DFF] dark:hover:bg-[#DF8DFF] dark:hover:text-[#221C25] dark:border-[#BCB0C1] transition-all duration-500"
             >
               Download my Resume
             </a>

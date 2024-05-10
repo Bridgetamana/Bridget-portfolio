@@ -54,11 +54,11 @@ const Header = () => {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-    document.body.classList.toggle("dark", darkMode);
+    document.body.classList.toggle("dark");
   };
 
   return (
-    <nav className="sticky top-0 right-0 bg-[#F3F3F3] dark:bg-[#341A3E] z-50">
+    <nav className="sticky top-0 right-0 bg-[#EFE5FD] dark:bg-[#221C25] z-50">
       <div className="w-full mx-auto max-w-7xl p-6 lg:px-8 lg:flex justify-between items-center">
         <div className="flex items-center justify-between">
           <motion.span
@@ -70,7 +70,7 @@ const Header = () => {
               type: "ease-in",
             }}
           >
-            <span className="bg-[#DF8DFF] p-2 rounded-full">
+            <span className="bg-[#570071] dark:bg-[#DF8DFF] p-2 rounded-full">
               <FaHeart className="text-white text-sm" />
             </span>
             <a
@@ -98,7 +98,10 @@ const Header = () => {
             initial="closed"
             animate={menuOpen ? "open" : "closed"}
           >
-            <ul className="p-6 mt-4 bg-[#F0EFF1] dark:bg-[#341A3E] drop-shadow-lg flex flex-col items-center text-lg">
+            <ul
+              role="list"
+              className="p-6 mt-4 bg-[#EFE5FD] dark:bg-[#221C25] drop-shadow-lg flex flex-col items-center text-lg"
+            >
               <motion.li
                 className="p-2 cursor-pointer"
                 whileHover={{ scale: 1.1 }}
@@ -141,17 +144,18 @@ const Header = () => {
                   Project
                 </Link>
               </motion.li>
-              <li
-                className="p-2 cursor-pointer dark:bg-[#E592FF] dark:text-[#341A3E] dark:hover:border-[#F1D5FC] bg-[#341A3E] hover:bg-transparent dark:hover:bg-transparent hover:border-[1px] hover:border-[#341A3E] text-[#E592FF] hover:text-[#341A3E] dark:hover:text-[#E592FF] rounded-full"
+              <motion.li
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="p-2 cursor-pointer"
                 onClick={() => toggleDarkMode()}
+                title={
+                  darkMode ? "Switch to dark mode" : "Switch to light mode"
+                }
               >
-                {darkMode && (
-                  <BsMoonStars className="text-2xl cursor-pointer" />
-                )}
-                {!darkMode && (
-                  <BsFillSunFill className="text-2xl cursor-pointer" />
-                )}
-              </li>{" "}
+                {!darkMode && <BsMoonStars className="text-2xl" />}
+                {darkMode && <BsFillSunFill className="text-2xl" />}
+              </motion.li>{" "}
             </ul>
           </motion.div>
         )}
@@ -166,7 +170,7 @@ const Header = () => {
             type: "ease-in",
           }}
         >
-          <ul className="flex gap-8 text-lg items-center">
+          <ul role="list" className="flex gap-8 text-lg items-center">
             <motion.li
               className="pr-4 cursor-pointer"
               whileHover={{ scale: 1.1 }}
@@ -206,20 +210,15 @@ const Header = () => {
                 Project
               </Link>
             </motion.li>
-            <li
-              className={`p-2 cursor-pointer ${
-                darkMode
-                  ? "dark:bg-[#E592FF] dark:text-[#341A3E] dark:hover:border-[#F1D5FC]"
-                  : "bg-[#341A3E] text-[#E592FF] hover:text-[#341A3E] dark:hover:text-[#E592FF]"
-              } hover:bg-transparent hover:border-[1px] hover:border-[#341A3E] rounded-full`}
+            <motion.li
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-2 cursor-pointer"
               onClick={toggleDarkMode}
+              title={darkMode ? "Switch to dark mode" : "Switch to light mode"}
             >
-              {darkMode ? (
-                <BsMoonStars className="text-2xl cursor-pointer" />
-              ) : (
-                <BsFillSunFill className="text-2xl cursor-pointer" />
-              )}
-            </li>
+              {!darkMode ? <BsMoonStars /> : <BsFillSunFill />}
+            </motion.li>
           </ul>
         </motion.div>
       </div>
