@@ -3,7 +3,7 @@ import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#570071] dark:bg-[#F1D5FC] mt-16 text-[#EDEAEF] dark:text-[#26272A]">
+    <footer className="bg-[#570071] dark:bg-[#DF8DFF] mt-16 text-[#EDEAEF] dark:text-[#251C29]/[87%]">
       <div className="container mx-auto py-12 px-6">
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <h2 className="text-lg font-medium mb-4 lg:mb-0">
@@ -15,7 +15,7 @@ const Footer = () => {
                 href="https://github.com/Bridgetamana"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#C372E2]"
+                className="hover:text-[#C372E2] dark:hover:text-[#570071]"
               >
                 <FaGithub />
               </a>
@@ -25,7 +25,7 @@ const Footer = () => {
                 href="https://twitter.com/amana_bridget"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#C372E2]"
+                className="hover:text-[#C372E2] dark:hover:text-[#570071]"
               >
                 <FaTwitter />
               </a>
@@ -35,7 +35,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/bridget-amana/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#C372E2]"
+                className="hover:text-[#C372E2] dark:hover:text-[#570071]"
               >
                 <FaLinkedin />
               </a>

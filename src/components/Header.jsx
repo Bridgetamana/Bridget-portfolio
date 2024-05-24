@@ -58,7 +58,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="sticky top-0 right-0 bg-[#EFE5FD] dark:bg-[#221C25] z-50">
+    <nav className="sticky top-0 right-0 bg-[#EFE5FD] dark:bg-[#1E1421] z-50">
       <div className="w-full mx-auto max-w-7xl p-6 lg:px-8 lg:flex justify-between items-center">
         <div className="flex items-center justify-between">
           <motion.span
@@ -73,10 +73,7 @@ const Header = () => {
             <span className="bg-[#570071] dark:bg-[#DF8DFF] p-2 rounded-full">
               <FaHeart className="text-white text-sm" />
             </span>
-            <a
-              href="#"
-              className="text-xl font-medium font-Worksans cursor-pointer"
-            >
+            <a href="#" className="text-xl font-bold cursor-pointer">
               Bridget Amana
             </a>
           </motion.span>

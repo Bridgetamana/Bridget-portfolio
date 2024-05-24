@@ -33,7 +33,7 @@ const HeroSection = () => {
             type: "ease-in",
           }}
         >
-          <h1 className="text-3xl font-Worksans font-medium mb-4 text-[#570071] dark:text-[#df8dff] ">
+          <h1 className="text-3xl font-bold mb-4 text-[#570071] dark:text-[#df8dff] ">
             Hello, 🙃
           </h1>
           <p className="text-xl">

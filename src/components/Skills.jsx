@@ -16,15 +16,15 @@ const Skills = () => {
         }}
       >
         <div>
-          <h1 className="text-4xl font-Worksans font-semibold mb-4 text-[#570071] dark:text-[rgb(223,141,255)]">
+          <h1 className="text-4xl mb-4 text-[#570071] dark:text-[#DF8DFF]">
             Skills 🛠️
           </h1>
-          <div className="text-[#302D32] dark:text-[#BCB0C1]">
-            <div className="py-6">
+          <div className="dark:text-[#F0EDF0]/[87%] text-[#251C29]/[87%]">
+            <div className="pb-4 pt-8">
               <h2 className="text-xl font-medium text-[#251C29] dark:text-[#F0EDF0]">
                 Languages
               </h2>
-              <ul className="border-b-2 border-[#570071] dark:border-[#E592FF] border-dashed mt-4 pb-4 uppercase flex flex-wrap">
+              <ul className="mt-4 uppercase flex flex-wrap">
                 <li className="flex items-center gap-2 mr-8">
                   <span className="w-2 h-2 bg-[#302D32]/50 dark:bg-[#BCB0C1] rounded-full mr-3"></span>
                   <p>HTML</p>
@@ -42,11 +42,11 @@ const Skills = () => {
                 </li>
               </ul>
             </div>
-            <div className="py-6">
+            <div className="py-4">
               <h2 className="text-xl font-medium text-[#251C29] dark:text-[#F0EDF0]">
                 Libraries/Frameworks
               </h2>
-              <ul className="border-b-2 border-[#570071] dark:border-[#E592FF] border-dashed mt-4 pb-4 uppercase flex flex-wrap">
+              <ul className="mt-4 uppercase flex flex-wrap">
                 <li className="flex items-center gap-2 mr-8">
                   <span className="w-2 h-2 bg-[#302D32]/50 dark:bg-[#BCB0C1] rounded-full mr-3"></span>
                   <p>Tailwind CSS</p>
@@ -59,11 +59,11 @@ const Skills = () => {
                 </li>
               </ul>
             </div>
-            <div className="py-6">
+            <div className="py-4">
               <h2 className="text-xl font-medium text-[#251C29] dark:text-[#F0EDF0]">
                 Version control
               </h2>
-              <ul className="border-b-2 border-[#570071] dark:border-[#E592FF] border-dashed mt-4 pb-4 uppercase mb-8 flex flex-wrap">
+              <ul className="mt-4 uppercase mb-8 flex flex-wrap">
                 <li className="flex items-center gap-2 mr-8">
                   <span className="w-2 h-2 bg-[#302D32]/50 dark:bg-[#BCB0C1] rounded-full mr-3"></span>
                   <p>Github</p>

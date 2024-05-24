@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 function App() {
 
   return (
-    <div className="bg-[#EFE5FD] text-[#251C29] dark:bg-[#221C25] font-sans   dark:text-[#F0EDF0]">
+    <div className="bg-[#FDF7FF] text-[#251C29] dark:bg-[#170D1C] font-sans dark:text-[#F0EDF0]">
       <Header />
       <HeroSection />
       <Skills />
