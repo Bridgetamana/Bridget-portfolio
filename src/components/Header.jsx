@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { BsFillSunFill, BsMoonStars } from "react-icons/bs";
 import { CgMenuRight } from "react-icons/cg";
 import { FaHeart } from "react-icons/fa";
 import { LiaTimesSolid } from "react-icons/lia";
 import { motion } from "framer-motion";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
   const variants = {
@@ -45,20 +46,36 @@ const Header = () => {
   };
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
-  const [darkMode, setDarkMode] = useState(false);
-
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.body.classList.toggle("dark");
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="sticky top-0 right-0 bg-[#EFE5FD] dark:bg-[#1E1421] z-50">
+    <nav
+      className={`sticky top-0 right-0 z-50 transition-colors duration-300 ${
+        scrollPosition > 50
+          ? "bg-[#EFE5FD] dark:bg-[#1E1421]"
+          : "bg-[#FDF7FF] dark:bg-[#170D1C]"
+      }`}
+    >
       <div className="w-full mx-auto max-w-7xl p-6 lg:px-8 lg:flex justify-between items-center">
         <div className="flex items-center justify-between">
           <motion.span
@@ -153,6 +170,52 @@ const Header = () => {
                 {!darkMode && <BsMoonStars className="text-2xl" />}
                 {darkMode && <BsFillSunFill className="text-2xl" />}
               </motion.li>{" "}
+              <motion.li className="p-2">
+                <ul className="flex gap-4">
+                  <motion.li
+                    className="p-2 cursor-pointer"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <a
+                      href="https://github.com/Bridgetamana"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                    >
+                      <FaGithub />
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    className="p-2 cursor-pointer"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <a
+                      href="https://twitter.com/amana_bridget"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                    >
+                      <FaTwitter />
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    className="p-2 cursor-pointer"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/bridget-amana/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                    >
+                      <FaLinkedin />
+                    </a>
+                  </motion.li>
+                </ul>
+              </motion.li>
             </ul>
           </motion.div>
         )}

@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <section
-      className="w-full mx-auto max-w-5xl p-6 lg:px-8 mt-16"
+      className="w-full mx-auto max-w-5xl p-6 lg:px-8 mt-10"
       id="project"
     >
       <motion.div
@@ -27,7 +27,7 @@ const Projects = () => {
           </h1>
           <div className="grid md:grid-cols-2 p-4 mt-4 gap-12">
             {/* Project 1 */}
-            <div className="rounded-md shadow-lg bg-[#F0EFF1] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
+            <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="max-w-lg border-b-2 border-[#5F5263]">
                 <img
                   src={Project1}
@@ -40,8 +40,9 @@ const Projects = () => {
                   Mini-shopping-cart
                 </h2>
                 <p className="">
-                  A mini-shopping cart page project built using HTML, CSS, and
-                  JavaScript.
+                  This is a simple e-commerce web application that allows users
+                  to browse products, add items to their cart, and view their
+                  cart summary.
                 </p>
                 <ul className="flex flex-wrap ml-4 mt-2 items-center gap-6 list-disc uppercase">
                   <li className="text-xs rounded-full">Javascript</li>
@@ -69,7 +70,7 @@ const Projects = () => {
               </div>
             </div>
             {/* Project 2 */}
-            <div className="rounded-md shadow-lg bg-[#F0EFF1] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
+            <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="">
                 <img
                   src={Project2}
@@ -82,8 +83,9 @@ const Projects = () => {
                   Form Validation
                 </h2>
                 <p>
-                  A form validation project built using HTML, CSS, and
-                  JavaScript.
+                  This is a web application focused on user authentication and
+                  form validation. It provides a simple interface for users to
+                  create an account with clear feedback for validation errors.
                 </p>
                 <ul className="flex flex-wrap ml-4 mt-2 items-center gap-6 list-disc uppercase">
                   <li className="text-xs rounded-full">Javascript</li>
@@ -111,7 +113,7 @@ const Projects = () => {
               </div>
             </div>
             {/* Project 3 */}
-            <div className="rounded-md shadow-lg bg-[#F0EFF1] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
+            <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="">
                 <img
                   src={Project3}
@@ -124,8 +126,8 @@ const Projects = () => {
                   Movie List
                 </h2>
                 <p>
-                  A responsive movie website that allows users to search for
-                  their favorite movies.
+                  Movie List is a web application designed to allow users to
+                  search for movies and view detailed information about them.
                 </p>
                 <ul className="flex flex-wrap ml-4 mt-2 items-center gap-6 list-disc uppercase">
                   <li className=" text-xs p-2 rounded-full">HTML</li>
@@ -154,7 +156,7 @@ const Projects = () => {
             </div>
 
             {/* Project 4 */}
-            <div className="rounded-md shadow-lg bg-[#F0EFF1] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
+            <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="">
                 <img
                   src={Project4}
@@ -167,8 +169,7 @@ const Projects = () => {
                   Bankist Website
                 </h2>
                 <p>
-                  This is a minimalist online banking application built with
-                  React.
+                  Bankist is a minimalist banking website designed to provide a user-friendly interface for banking services.
                 </p>
                 <ul className="flex flex-wrap ml-4 mt-2 items-center gap-6 list-disc uppercase">
                   <li className=" text-xs p-2 rounded-full">React</li>
@@ -196,7 +197,7 @@ const Projects = () => {
             </div>
 
             {/* Project 5 */}
-            <div className="rounded-md shadow-lg bg-[#F0EFF1] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
+            <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="">
                 <img
                   src={Project5}
@@ -208,7 +209,11 @@ const Projects = () => {
                 <h2 className="text-2xl font-bold uppercase mb-2 dark:text-[#F7FAFC] text-[#251C29]">
                   Bridget's portfolio
                 </h2>
-                <p>A single page portfolio</p>
+                <p>
+                  This is a personal portfolio website to showcase my work as a
+                  frontend developer. The site features a dark mode theme, a
+                  clean and minimalistic design.
+                </p>
                 <ul className="flex flex-wrap ml-4 mt-2 items-center gap-6 list-disc uppercase">
                   <li className=" text-xs p-2 rounded-full">React</li>
                   <li className=" text-xs p-2 rounded-full">Tailwindcss</li>
@@ -235,7 +240,7 @@ const Projects = () => {
             </div>
 
             {/* Project 6 */}
-            {/* <div className="rounded-md shadow-lg bg-[#F0EFF1] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
+            {/* <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="">
                 <img
                   src={Project6}

@@ -15,7 +15,7 @@ const Footer = () => {
                 href="https://github.com/Bridgetamana"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#C372E2] dark:hover:text-[#570071]"
+                className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
               >
                 <FaGithub />
               </a>
@@ -25,7 +25,7 @@ const Footer = () => {
                 href="https://twitter.com/amana_bridget"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#C372E2] dark:hover:text-[#570071]"
+                className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
               >
                 <FaTwitter />
               </a>
@@ -35,7 +35,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/bridget-amana/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#C372E2] dark:hover:text-[#570071]"
+                className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
               >
                 <FaLinkedin />
               </a>
