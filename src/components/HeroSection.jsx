@@ -25,7 +25,7 @@ const HeroSection = () => {
           />
         </motion.div>
         <motion.div
-          className="max-w-sm"
+          className="max-w-md"
           initial={{ x: "7rem", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{
@@ -34,12 +34,12 @@ const HeroSection = () => {
           }}
         >
           <h1 className="text-3xl font-bold mb-4 text-[#570071] dark:text-[#df8dff] ">
-            Hello, 🙃
+            Hello, I'm Bridget Amana🙃
           </h1>
           <p className="text-xl">
-            I'm Bridget Amana, a frontend developer.
-            <br /> I build websites that are not only clean, but also responsive
-            and accessible.{" "}
+            A front-end developer passionate about creating interactive and
+            user-friendly websites, with a focus on responsiveness and
+            accessibility.{" "}
           </p>
           <button className="uppercase mt-8">
             <a

@@ -4,7 +4,7 @@ import Project2 from "../assets/img/uservalidati0n-screenshot.png";
 import Project3 from "../assets/img/moviielist-screenshot.png";
 import Project4 from "../assets/img/bankist-website-screenshot.png";
 import Project5 from "../assets/img/porfolio-screenshot.png";
-import Project6 from "../assets/img/uservalidati0n-screenshot.png";
+import Project6 from "../assets/img/job-application-tracker-screenshot.png";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -169,7 +169,8 @@ const Projects = () => {
                   Bankist Website
                 </h2>
                 <p>
-                  Bankist is a minimalist banking website designed to provide a user-friendly interface for banking services.
+                  Bankist is a minimalist banking website designed to provide a
+                  user-friendly interface for banking services.
                 </p>
                 <ul className="flex flex-wrap ml-4 mt-2 items-center gap-6 list-disc uppercase">
                   <li className=" text-xs p-2 rounded-full">React</li>
@@ -240,7 +241,7 @@ const Projects = () => {
             </div>
 
             {/* Project 6 */}
-            {/* <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
+            <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="">
                 <img
                   src={Project6}
@@ -249,15 +250,21 @@ const Projects = () => {
                 />
               </div>
               <div className="p-4">
-                <h2 className="text-2xl font-bold uppercase">Title</h2>
-                <p>Description</p>
+                <h2 className="text-2xl font-bold uppercase">
+                  Job Application Tracker
+                </h2>
+                <p>
+                  The Job Application Tracker is a web application designed to
+                  help users keep track of their job applications. It allows
+                  users to add, and manage their job applications easily.{" "}
+                </p>
                 <ul className="flex flex-wrap ml-4 mt-2 items-center gap-6 list-disc uppercase">
-                  <li className=" text-xs p-2 rounded-full">language</li>
-                  <li className=" text-xs p-2 rounded-full">language</li>
+                  <li className=" text-xs p-2 rounded-full">React</li>
+                  <li className=" text-xs p-2 rounded-full">tailwindcss</li>
                 </ul>
                 <span className="flex gap-8 mt-8 items-center">
                   <a
-                    href="#"
+                    href="https://job-applicati0n-tracker.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline hover:text-[#8D43AA] cursor-pointer dark:hover:text-[#E592FF] hover:no-underline"
@@ -265,7 +272,7 @@ const Projects = () => {
                     Visit site
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/Bridgetamana/Job-Application-Tracker"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline hover:text-[#8D43AA] cursor-pointer dark:hover:text-[#E592FF] hover:no-underline"
@@ -274,7 +281,7 @@ const Projects = () => {
                   </a>
                 </span>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </motion.div>

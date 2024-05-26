@@ -70,13 +70,13 @@ const Header = () => {
 
   return (
     <nav
-      className={`sticky top-0 right-0 z-50 transition-colors duration-300 ${
-        scrollPosition > 50
-          ? "bg-[#EFE5FD] dark:bg-[#1E1421]"
-          : "bg-[#FDF7FF] dark:bg-[#170D1C]"
+      className={`sticky top-0 right-0 z-50 transition-colors duration-500 ${
+        scrollPosition > 100
+          ? "bg-[#EFE5FD] dark:bg-[#1E1421] shadow-md"
+          : "bg-[#FDF7FF] dark:bg-[#170D1C] "
       }`}
     >
-      <div className="w-full mx-auto max-w-7xl p-6 lg:px-8 lg:flex justify-between items-center">
+      <div className="w-full mx-auto max-w-7xl p-4 lg:flex justify-between items-center">
         <div className="flex items-center justify-between">
           <motion.span
             className="flex gap-2 items-center"
@@ -114,7 +114,11 @@ const Header = () => {
           >
             <ul
               role="list"
-              className="p-6 mt-4 bg-[#EFE5FD] dark:bg-[#221C25] drop-shadow-lg flex flex-col items-center text-lg"
+              className={`p-6 mt-4 drop-shadow-lg flex flex-col items-center text-lg ${
+                scrollPosition > 100
+                  ? "bg-[#EFE5FD] dark:bg-[#1E1421] shadow-md"
+                  : "bg-[#FDF7FF] dark:bg-[#170D1C] "
+              } `}
             >
               <motion.li
                 className="p-2 cursor-pointer"
