@@ -45,7 +45,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/bridget-amana/"
+                href="https://codepen.io/Bridgetamana"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#8D43AA]"

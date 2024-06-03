@@ -190,7 +190,7 @@ const Header = () => {
                       href="https://github.com/Bridgetamana"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                      className="hover:text-[#8D43AA]"
                       title="Github"
                     >
                       <FaGithub />
@@ -205,7 +205,7 @@ const Header = () => {
                       href="https://twitter.com/amana_bridget"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                      className="hover:text-[#8D43AA]"
                       title="Twitter"
                     >
                       <FaTwitter />
@@ -220,7 +220,7 @@ const Header = () => {
                       href="https://www.linkedin.com/in/bridget-amana/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                      className="hover:text-[#8D43AA]"
                       title="Linkedin"
                     >
                       <FaLinkedin />
@@ -232,10 +232,10 @@ const Header = () => {
                     whileTap={{ scale: 0.95 }}
                   >
                     <a
-                      href="https://www.linkedin.com/in/bridget-amana/"
+                      href="https://codepen.io/Bridgetamana"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                      className="hover:text-[#8D43AA]"
                       title="Codepen"
                     >
                       <FaCodepen />
