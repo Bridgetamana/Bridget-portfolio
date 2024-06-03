@@ -2,10 +2,15 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { BsFillSunFill, BsMoonStars } from "react-icons/bs";
 import { CgMenuRight } from "react-icons/cg";
-import { FaHeart } from "react-icons/fa";
 import { LiaTimesSolid } from "react-icons/lia";
 import { motion } from "framer-motion";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaTwitter,
+  FaLinkedin,
+  FaCodepen,
+  FaHeart,
+} from "react-icons/fa";
 
 const Header = () => {
   const variants = {
@@ -186,6 +191,7 @@ const Header = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                      title="Github"
                     >
                       <FaGithub />
                     </a>
@@ -200,6 +206,7 @@ const Header = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                      title="Twitter"
                     >
                       <FaTwitter />
                     </a>
@@ -214,8 +221,24 @@ const Header = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                      title="Linkedin"
                     >
                       <FaLinkedin />
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    className="p-2 cursor-pointer"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/bridget-amana/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                      title="Codepen"
+                    >
+                      <FaCodepen />
                     </a>
                   </motion.li>
                 </ul>

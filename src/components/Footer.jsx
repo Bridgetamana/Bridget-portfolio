@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin, FaCodepen } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -15,7 +15,8 @@ const Footer = () => {
                 href="https://github.com/Bridgetamana"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                className="hover:text-[#8D43AA]"
+                title="Github"
               >
                 <FaGithub />
               </a>
@@ -25,7 +26,8 @@ const Footer = () => {
                 href="https://twitter.com/amana_bridget"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                className="hover:text-[#8D43AA]"
+                title="Twitter"
               >
                 <FaTwitter />
               </a>
@@ -35,9 +37,21 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/bridget-amana/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#8D43AA] dark:hover:text-[#E592FF]"
+                className="hover:text-[#8D43AA]"
+                title="Linkedin"
               >
                 <FaLinkedin />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/bridget-amana/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#8D43AA]"
+                title="codepen"
+              >
+                <FaCodepen />
               </a>
             </li>
           </ul>

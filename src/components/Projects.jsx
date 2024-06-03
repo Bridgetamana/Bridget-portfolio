@@ -1,10 +1,10 @@
 import React from "react";
-import Project1 from "../assets/img/mini-shopping-cart-screenshot.png";
-import Project2 from "../assets/img/uservalidati0n-screenshot.png";
-import Project3 from "../assets/img/moviielist-screenshot.png";
-import Project4 from "../assets/img/bankist-website-screenshot.png";
-import Project5 from "../assets/img/porfolio-screenshot.png";
-import Project6 from "../assets/img/job-application-tracker-screenshot.png";
+import MiniShoppingCart from "../assets/img/mini-shopping-cart-project.png";
+import UserValidation from "../assets/img/user-validation-project.png";
+import MovieList from "../assets/img/movie-list-project.png";
+import BankistWebsite from "../assets/img/bankist-website-project.png";
+import BridgetPortfolio from "../assets/img/portfolio-project.png";
+import JobApplicationTracker from "../assets/img/job-application-tracker-project.png";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -30,7 +30,7 @@ const Projects = () => {
             <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="max-w-lg border-b-2 border-[#5F5263]">
                 <img
-                  src={Project1}
+                  src={MiniShoppingCart}
                   alt="Mini Shopping Cart Project"
                   className="w-full h-[250px] object-cover"
                 />
@@ -73,7 +73,7 @@ const Projects = () => {
             <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="">
                 <img
-                  src={Project2}
+                  src={UserValidation}
                   alt="Form Validation Project"
                   className="w-full h-[250px] object-cover"
                 />
@@ -116,7 +116,7 @@ const Projects = () => {
             <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="">
                 <img
-                  src={Project3}
+                  src={MovieList}
                   alt="Movie List Project"
                   className="w-full h-[250px] object-cover"
                 />
@@ -159,7 +159,7 @@ const Projects = () => {
             <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="">
                 <img
-                  src={Project4}
+                  src={BankistWebsite}
                   alt="Bankist Website Project"
                   className="w-full h-[250px] object-cover"
                 />
@@ -201,7 +201,7 @@ const Projects = () => {
             <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="">
                 <img
-                  src={Project5}
+                  src={BridgetPortfolio}
                   alt="Bridget's Portfolio Project"
                   className="w-full h-[250px] object-cover"
                 />
@@ -244,7 +244,7 @@ const Projects = () => {
             <div className="rounded-md shadow-lg bg-[#FEFCFF] dark:bg-[#1E1421] max-w-lg mx-auto dark:border dark:border-[#3C273D] dark:text-[#F7FAFC] text-[#1E1F24]">
               <div className="">
                 <img
-                  src={Project6}
+                  src={JobApplicationTracker}
                   alt="Project 6"
                   className="w-full h-[250px] object-cover"
                 />
