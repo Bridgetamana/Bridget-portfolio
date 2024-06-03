@@ -81,7 +81,7 @@ const Header = () => {
           : "bg-[#FDF7FF] dark:bg-[#170D1C] "
       }`}
     >
-      <div className="w-full mx-auto max-w-7xl p-4 lg:flex justify-between items-center">
+      <div className="w-full mx-auto max-w-7xl p-6 md:p-4 lg:flex justify-between items-center">
         <div className="flex items-center justify-between">
           <motion.span
             className="flex gap-2 items-center"
